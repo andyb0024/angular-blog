@@ -1,0 +1,17 @@
+<app-banner [title]="title"></app-banner>
+  <div class="row  my-5">
+    <div class="col-md-3 col-lg-3 col-sm-4 my-3"  *ngFor="let post of sports">
+  <app-cards [title]="post.title"
+            [content]="post.content"
+            [timestamp]="post.timestamp"
+            [image]="post.get_image"
+            [category]="post.category"
+
+  >
+
+  </app-cards>
+    </div>
+
+</div>
+
+

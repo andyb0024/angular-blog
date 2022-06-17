@@ -1,0 +1,53 @@
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 13px;
+  text-align: center;
+  border-bottom: 2px solid #CCCCCC;
+
+  cursor: pointer;
+
+}
+
+li {
+  display: inline;
+  padding: 15px;
+  text-align: center;
+
+  a{
+    position: relative;
+    text-decoration: none;
+    letter-spacing: 0.5px;
+    padding: px;
+    color:black;
+
+
+  }
+
+
+}
+
+a:after{
+  content: "";
+  position: absolute;
+  background-color: black;
+  height: 2px;
+  width: 0;
+  left: 0;
+  bottom: -17px;
+  transition: transform .8s ease;
+  transition: 0.3s;
+  transform:  scaleX(1);
+}
+ul li a:hover:after{
+  width: 100%;
+  transform:  scaleX(1.5);
+}
+
+.active{
+
+  color: #000;
+  cursor: pointer;
+
+  border-bottom: 2px solid ;
+}
